@@ -13,24 +13,29 @@
     font-style: normal;
 }
 * {
-    box-sizing: border-box;
-    margin: 0;
-    gap: 1;
-    padding: 16px 16px;
-    font-family: 'Inter', 'Montserrat';
+  box-sizing: border-box;
+  padding: 0;
+  font-family: 'Inter', 'Montserrat';
+
+}
+body {
+  margin: 0;
+  
 }
 header {
     margin: 0;
+    padding: 16px 64px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 header img {
     width: 150px;
 }
 .menu {
     margin: 0;
-    gap: 2px;
+    padding: 16px 16px;
+    gap: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,8 +43,6 @@ header img {
 }
 
 .menu a {
-    align-items: center;
-    justify-content: center;
     font-family: 'Inter', 'Montserrat';
     font-size: 20px;
     color: black;
@@ -48,16 +51,18 @@ header img {
 }
 .cadastro {
     display: flex;
-    align-items: flex-end;
     justify-content: flex-end;
-    width: 100%;
+    width: 370px;
+    padding: 16px 64px;
 }
 .cadastro a {
     text-decoration: none;
     color: white;
     background-color: black;
     padding: 16px 64px;
+    width: 400px;
     justify-content: flex-end;
+    text-align: center;
 }
 .container {
   display: flex;
@@ -69,21 +74,12 @@ header img {
 
 .titulo {
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
   justify-content: space-between;
   flex: 1;
-  padding-right: 20px;
+  padding: 20px;
 }
-.projeto-btn {
-  border-radius: 3px;
-  align-self: flex-start;
-  text-decoration: none;
-  background-color: black;
-  color: white;
-  padding: 16px 48px;
-  font-size: 18px;
-  margin-top: 20px;
-}
+
 .titulo h1 {
     margin: 0;
     font-size: 100px;
@@ -104,15 +100,30 @@ header img {
 }
 .container2 {
   display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
+  padding: 16px 64px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row nowrap;
     align-items: flex-start;
+  }
+  .projeto-btn {
+    border-radius: 3px;
+    align-self: flex-end;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 16px 64px;
+    font-size: 18px;
+    margin-top: 20px;
   }
 
   
 .c2menu1 {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    padding: 16px 16px;
+    gap: 30px;
+    align-items: center;
     width: 100%;
     max-width: 800px;
     text-align: center;
@@ -132,6 +143,7 @@ header img {
   
   .container2 a {
     align-self: flex-start;
+    align-content: space-between;
     justify-content: flex-start;
     text-decoration: none;
     background-color: black;
@@ -145,7 +157,7 @@ header img {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    align-self: flex-end;
   }
   .menu2 {
     align-items: center;
@@ -166,38 +178,416 @@ header img {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    flex-direction: row;
     gap: 20px;
     width: 100%;
 }
   .item1 {
-    order: 1;
+    position: relative;
+    right: 100px;
     background-color: black;
     display: flex;
     justify-content: center;
     align-self: flex-end;
     width: 150px;
-    height: 150px;
+    height: 140px;
   }
   .item1 img {
     position: absolute;
     z-index: 2;
     width: auto;
-    height: auto;
-    justify-content: center;
-    align-items: center;
+    height: auto; 
     align-self: center;
-  }
-  .item2 {
-    justify-content: center;
-    align-self: flex-end;
-  }
+  } 
   .item2 img {
     position: relative;
-    width: auto;
+    width: 500px;
+    height: 400px;
+    align-self: center;
+  }
+  .titulo2 {
+    padding: 16px 16px;
+    gap: 20px;
+    align-self: space-between;
+  }
+  .hifen-maior {
+    padding: 16px 64px;
+    display: inline-block; 
+    transform: scaleX(6); 
+    margin-right: 0.5em; 
+    vertical-align: middle; 
+  }
+  .container3 {
+    padding: 16px 64px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .service-item {
+    flex-basis: 470px;
+    text-align: center;
+  }
+
+  .image-title-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .image-title-container img {
+    max-width: 150px;
+    margin-right: 10px;
+  }
+
+  .image-title-container h2 {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+
+  .service-item p.paragrafos {
+    font-size: 19px;
+    color: #8c8a97;
+  }
+  .container4 {
+    display: flex;
+    padding: 16px 64px;
+  }
+  .ambiente3 img {
+    width: 700px;
+    height: 495px;
+  }
+  .descricao {
+   display: flex;
+   padding: 16px 64px;
+   align-content: flex-start;
+   align-items: center;
+   flex-flow: column wrap;
+  }
+ 
+  .descricao h2 {
+    font-size: 51px;
+    margin: 0;
+  }
+  .p1 {
+    text-align: start;
+    font-size: 20px;
+    color: #5f5c6b;
+    margin-top: 30px;
+  }
+  .d1 {
+    display: flex;
+    gap: 240px;
+  
+  }
+  .d1 img {
+    width: 20px;
+    height: 20px;
+    align-self: center;
+  }
+  .d2 {
+    display: flex;
+    gap: 210px;
+  }
+  .d2 img {
+    width: 20px;
+    height: 20px;
+    align-self: center;  
+  }
+  .seemore {
+    margin-top: 70px;
+    background-color: black;
+    align-self: flex-start;
     height: auto;
+  }
+  .seemore a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 1rem 1rem;
+    
+    
+  }
+  .bolder {
+    font-weight: bold;
+  }
+  .container5 {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .item1-c5,
+  .item2-c5,
+  .item3-c5 {
+    padding: 1rem 4rem;
+    gap: 1rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .i1-item1-c5,
+  .i1-item2-c5,
+  .i1-item3-c5 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  
+  .container-image {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+  }
+  
+  .container-image img {
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: contain;
+  }
+  
+  .lado-direito {
+    flex: 1;
+    display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
-    align-self: flex-end;
+  }
+  .ambiente4 img {
+    margin-right: 16px;
+    width: 800px;
+    height: 680px;
+    
+  }
+  .p-item1-c5,
+  .p-item2-c5,
+  .p-item3-c5 {
+    flex-basis: 150px;
+    color: #5f5c6b;
+    text-align: start;
+  }
+  .container6 {
+    padding: 16px 64px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+
+  }
+  .container6 h2 {
+    padding: 16px;
+    font-size: 30px;   
+    text-align: end;
+    margin: 0;
+  }
+  .cliente1 h2,
+  .cliente2 h2 {
+    text-align: left;
+    padding: 16px;
+    font-size: 100px;
+    margin: 0;
+  }
+  .clientes {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .dsc p {
+    font-size: 20px;
+    color: #5f5c6b;
+    margin-top: 0;
+    text-align: end;
+  }
+  .cliente1,
+  .cliente2 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    width: auto;
+    height: 500px;
+    min-width: 300px;
+    background-color: #33303e;
+    color: white;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  
+  .cliente1-info,
+  .cliente2-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 32px;
+;
+  }
+  
+  .cliente1 img,
+  .cliente2 img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .nomecliente1,
+  .nomecliente2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  
+  .cidadecliente1,
+  .cidadecliente2 {
+    font-size: 14px;
+    color: grey;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  
+  .cliente1 p,
+  .cliente2 p {
+    font-size: 16px;
+    margin-top: 0;
+    line-height: 1.5;
+  }
+  .setas {
+    display: flex;
+    justify-content: flex-start;
+    width: 10px;
+  }
+  #s1 {
+    background-color: #c6c5ce;
+    margin-right: 30px;
+  }
+  #s2 {
+    background-color: #c6c5ce;
+    transform: scaleX(-1);
+  }
+  .cliente p {
+   align-self: center;
+  }
+  .container7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+  .h2-c7 {
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+  }
+  .p-c7 {
+    font-size: 20px;
+    color: #5f5c6b;
+    align-self: center;
+    width: 650px;
+    text-align: center;
+  }
+  .email {
+    width: 100%;
+    margin-top: -50px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+  }
+  .email input {
+    
+    width: 500px;
+    height: 65px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  .email button {
+    position: absolute;
+    margin-left: 20rem;
+    background-color: black;
+    color: white;
+    border: none;
+    height: 45px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .container8 {
+    background-color: black;
+    padding: 1rem 5rem;
+    height: 500px;
+  }
+
+  .email input{
+    border: none;
+  }
+  .email input:focus{
+    outline: none;
+  }
+  .contato {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 4rem;
+    gap: 2rem;
+    color:white;
+  }
+  .logobranca img {
+    filter: brightness(0) invert(1);
+    width: 100%;
+    height: auto;
+  }
+  .coluna-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column wrap;
+  }
+  .logos-contato {
+    margin-top: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 2.5rem;
+    width: 100%;
+  }
+  .logos-contato img {
+    object-fit: cover;
+    align-self: flex-start;
+    background-color: #7a7786;
+    width: auto;
+    height: 100%;
+  }
+  .coluna-servico {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column wrap;
+  }
+  .coluna-avaliacoes {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column wrap;
+  }
+  .coluna-endereco-mail {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column wrap;
   }
 
   
+  
+  aa
